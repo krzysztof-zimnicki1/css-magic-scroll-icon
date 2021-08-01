@@ -1,27 +1,38 @@
 .icon-scroll {
   position: absolute;
+	
+  /* Positions the Icon */
   left: 50%;
-  top: 90%;
+  top: 50%;
+	
   transform: translate(-50%, 0);
 	
 }
 
 .icon-scroll::before {
   position: absolute;
+	
+  /* Positions the Scroll Wheel of The Icon */
   top: 8px;
   left: 16px;
 
 }
 
 .icon-scroll {
+	
+  /* Anjusts the Icon Size */
   width: 40px;
   height: 70px;
+	
+  /* Adjusts the Icon Apperence */
   box-shadow: inset 0 0 0 3px #FFF;
   border-radius: 50px;
 
 }
 
 .icon-scroll::before {
+
+  /* Scroll Wheel Settings - WARNING, don't edit content:'': */
   content: '';
   width: 8px;
   height: 8px;
@@ -33,6 +44,7 @@
 	
 }
 
+/* Animation Properties */
 @keyframes scroll {
 	0% {
 	opacity: 1;
